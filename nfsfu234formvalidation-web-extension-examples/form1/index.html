@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>/* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:0px}.bottom-10{bottom:2.5rem}.left-0{left:0px}.left-4{left:1rem}.right-0{right:0px}.right-\[8\%\]{right:8%}.top-0{top:0px}.top-10{top:2.5rem}.top-5{top:1.25rem}.z-50{z-index:50}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.ml-6{margin-left:1.5rem}.ml-8{margin-left:2rem}.mr-1{margin-right:0.25rem}.mr-2{margin-right:0.5rem}.mr-6{margin-right:1.5rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.contents{display:contents}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-6{height:1.5rem}.h-9{height:2.25rem}.h-\[150px\]{height:150px}.h-\[170px\]{height:170px}.h-\[70px\]{height:70px}.h-full{height:100%}.h-screen{height:100vh}.max-h-\[400px\]{max-height:400px}.max-h-\[90\%\]{max-height:90%}.max-h-\[90vh\]{max-height:90vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-6{width:1.5rem}.w-9{width:2.25rem}.w-\[350px\]{width:350px}.w-\[60\%\]{width:60%}.w-full{width:100%}.w-screen{width:100vw}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.list-decimal{list-style-type:decimal}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded-\[5px\]{border-radius:5px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.border-b{border-bottom-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity))}.border-transparent{border-color:transparent}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-opacity-20{--tw-bg-opacity:0.2}.bg-opacity-80{--tw-bg-opacity:0.8}.bg-opacity-90{--tw-bg-opacity:0.9}.bg-cover{background-size:cover}.bg-center{background-position:center}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-5{padding:1.25rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-left{text-align:left}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[14px\]{font-size:14px}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.leading-10{line-height:2.5rem}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-b-2:hover{border-bottom-width:2px}.hover\:border-dotted:hover{border-style:dotted}.hover\:border-black:hover{--tw-border-opacity:1;border-color:rgb(0 0 0 / var(--tw-border-opacity))}.focus\:border-blue-400:focus{--tw-border-opacity:1;border-color:rgb(96 165 250 / var(--tw-border-opacity))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media not all and (min-width: 1024px){.max-lg\:w-\[90\%\]{width:90%}}@media not all and (min-width: 768px){.max-md\:max-w-\[80\%\]{max-width:80%}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:flex{display:flex}.lg\:w-1\/2{width:50%}}</style>
+    
+</head>
+
+<body >
+
+    <div class="bg-cover overflow-hidden bg-center h-screen z-50" style="background-image: url('http://images.nforshifu.com/public/uploads/imgs/oig4dgbhnyu4qjebnesbkpz2hdz6idfvrtgyh098uiuygtfuyui.png')">
+
+        <div class="bg-white bg-opacity-20 p-8 rounded-lg shadow-lg h-full lg:flex">
+            <div class="hidden h-full mr-6 lg:block lg:w-1/2">
+                <img src="http://images.nforshifu.com/public/uploads/imgs/animation_500_l4927aux.png" alt="Side Image" class="object-cover w-full h-full rounded-lg">
+            </div>
+            <div class="w-full lg:w-1/2">
+                <a href="https://linktr.ee/nforshifu234dev/" target="_blank" class="logo h-[170px] w-[200px] block rounded-md shadow-md border" style="background: #FEF6E3;">
+                    <img src="http://images.nforshifu.com/public/uploads/imgs/nforshifu234_dev_dark_logo.png " class="w-full h-full object-contain" alt="">
+                </a>
+                <h2 class="text-2xl font-semibold mb-4">Login</h2>
+                <form action="login.php" isAjax="true" class="space-y-4" id="myForm" >
+                    <div>
+                        <label for="email" class="block text-gray-600">Email</label>
+                        <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-400" required>
+                    </div>
+                    <div class="relative">
+                        <label for="password" class="block text-gray-600">Password</label>
+                        <input type="password" id="password" name="password" class="w-full border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-400" required>
+                        <div class="showPassword js-togglePassword absolute bottom-0 right-0 bg-black h-10 w-10 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path></svg>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg">Login</button>
+                </form>
+                <div class="mt-4">
+                    <div class="flex items-center justify-between">
+                        <div class="mr-2 text-[14px] font-semibold "></div>
+
+                        <div class="mr-2 text-[14px] font-semibold text-right ">Site Information? <a class="cursor-pointer text-blue-500" id="siteInfoBtn" >click me</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="directions-container fixed bg-black bg-opacity-80 w-screen h-screen z-50 left-0 top-0  js-container">
+
+        <div class="copyright-message text-black p-3 font-semibold absolute bottom-10 left-4 bg-white">
+            Copyright &copy; 
+            <a href="https://github.com/nforshifu234dev/nfsfu234-form-validation/" class="border-b border-transparent hover:border-black hover:border-b-2 hover:border-dotted transition duration-300" target="_blank">NFSFU234FormValidation</a> 
+            & 
+            <a href="https://x.com/nforshifu234dev/" class="border-b border-transparent hover:border-black hover:border-b-2 hover:border-dotted transition duration-300" target="_blank">NFORSHIFU234 Dev 🖤👨🏾‍💻</a>
+        </div>
+
+        <div class="instructions absolute right-[8%] top-10 bg-white bg-opacity-90 p-2 rounded-[5px] w-[350px] max-h-[90%] overflow-y-auto  max-md:max-w-[80%] ">
+            <div class="icon text-right flex items-center" style="justify-content: right;" >
+                <svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' class='w-12 h-12' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z'/></svg>
+            </div>
+            <div class="text">
+                <div class="mt-2 h-[150px] w-full text-left">
+                    <img src="http://images.nforshifu.com/public/uploads/imgs/nfsfu234-form-validation-library---big-banner.png " alt="" class="object-contain w-full h-full">
+                </div>
+                <div class="title font-bold text-2xl">Activate the NFSFU234FormValidation Extension</div>
+                <div class="description ml-6 mt-2">
+                    <ol class="list-decimal">
+                        <li>Click on the extension icon.</li>
+                        <li>Look for NFSFU234FormValidation Extension</li>
+                        <li>Click on the pin <i class="fa fa-map-pin" aria-hidden="true"></i> icon beside it (optional) </li>
+                        <li>Click on the NFSFU234FormValidation Extension </li>
+                        <li>A popup will show and you will see the <b>"Enable Form Validation"</b> button </li>
+                        <li>Look on your left screen and close this pop over</li>
+                        <li>Then try submitting the form again. without any input and it should show you some errors</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="close absolute left-4 top-5 bg-white flex items-center justify-center w-10 h-10 rounded-full select-none js-close">
+            X
+        </div>
+
+
+
+    </div>
+
+    <div class="site-info-container fixed bg-black bg-opacity-80 w-screen h-screen z-50 left-0 top-0 hidden js-container flex items-center justify-center ">
+
+        <div class="card p-5 bg-white rounded-md w-[60%] max-h-[90vh] max-lg:w-[90%]">
+            
+            <div class="header flex items-center justify-between h-[70px]">
+                <div class="text">
+                    <h2 class="text-xl font-bold flex items-center "> 
+                        <svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' class='h-6 w-6 mr-1' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z'/></svg>
+                        Site Information
+                    </h2>
+                </div>
+                <div class="icon js-close select-none">
+                    X
+                </div>
+            </div>
+
+            <div class="p-2 overflow-y-auto max-h-[400px]" >
+            
+                <section>
+                    <div class="heading">
+                        <div class="title font-bold text-2xl flex items-center ">
+                            <svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' class='w-9 h-9 mr-2' viewBox='0 0 16 16'><path d='M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z'/><path d='M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z'/></svg>
+                            What was used to build this website?
+                        </div>
+                        <div class="description text-[14px] my-3 ">All the elemnts used in building this login page</div>
+                    </div>
+                    <div class="contents">
+                        This login page was:
+                        
+                        <ol class="list-decimal ml-8">
+                            <li class="leading-10">Created by <a href="https://linktr.ee/nforshifu234dev/" target="_blank" rel="noopener noreferrer">NFORSHIFU234Dev🖤👨🏾‍💻 || Shifu-Nfor Nyuiring-yoh Rhagninyui</a> </li>
+                            <li class="leading-10">The whole website was built using Tailwind CSS ✨</li>
+                            <li class="leading-10">The background image was generated using Skype Bing AI</li>
+                            <li class="leading-10">The animation GIF or image was gotten from the internet.</li>
+                            <li class="leading-10">The NFORSHIFU234Dev Logo was gotten from NFORSHIFU234Dev.  &copy; All Rights Reserved </li>
+                        </ol>
+
+                    </div>
+                </section>
+            
+                <section class="mt-4">
+                    <div class="heading">
+                        <div class="title font-bold text-2xl flex items-center ">
+                            <svg xmlns='http://www.w3.org/2000/svg' fill='currentColor' class='w-14 h-14 mr-2' viewBox='0 0 16 16'><path d='M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z'/><path d='M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z'/></svg>
+                            What NFSFU234FormValidation Library functions are expected to be used in this website by the Extension?
+                        </div>
+                        <div class="description text-[14px] my-3 ">The list of functions that are expected to be called by the extension from the NFSFU234FormValidation Library</div>
+                    </div>
+                    <div class="contents">
+                        They are:
+                        
+                        <ol class="list-decimal ml-8">
+                            <li class="leading-10">The <b>togglePasswordVisibility</b> function</li>
+                            <li class="leading-10">The <b>validate</b> function </li>
+                            <li class="leading-10">The <b>loading</b> function</li>
+                            <li class="leading-10">The <b>getFormDetails</b> function</li>
+                            <li class="leading-10">The <b>ajax</b> function</li>
+                            <li class="leading-10">The <b>displayError</b> function</li>
+                            <li class="leading-10">The <b>reset</b> function</li>
+                            <li class="leading-10 hidden"></li>
+                        </ol>
+
+                    </div>
+                </section>
+
+                <section>
+
+                    <div class="copyright-message text-black p-3 font-semibold">
+                        Copyright &copy; 
+                        <a href="https://github.com/nforshifu234dev/nfsfu234-form-validation/" class="border-b border-transparent hover:border-black hover:border-b-2 hover:border-dotted transition duration-300" target="_blank">NFSFU234FormValidation</a> 
+                        & 
+                        <a href="https://x.com/nforshifu234dev/" class="border-b border-transparent hover:border-black hover:border-b-2 hover:border-dotted transition duration-300" target="_blank">NFORSHIFU234 Dev 🖤👨🏾‍💻</a>
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
