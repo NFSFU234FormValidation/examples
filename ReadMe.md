@@ -8,6 +8,8 @@ Explore practical usage examples and demos for NFSFU234FormValidation in this re
 - [Example 1](nfsfu234-form-validation-examples/example1/)
 - [Example 2](nfsfu234-form-validation-examples/example2/)
 - [Example 3](nfsfu234-form-validation-examples/example3/)
+- [Create React App](nfsfu234-form-validation-examples/my-create-react-app/)
+- [Vite React](nfsfu234-form-validation-examples/my-vite-app/)
 
 ## Web Extension Examples
 
